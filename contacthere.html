@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Payment Gateway | Integration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+        body {
+            background-image: url(assets/img/banner-bg-011.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        function validation() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            if (name == "") {
+                alert("Please Enter Name");
+            }
+            else if (email == "") {
+                alert("Please Enter Email Id");
+            }
+            else if (subject == "") {
+                alert("Please Enter subject");
+            }
+            else if (message == "") {
+                alert("Please Write Message");
+            }
+            else {
+                alert("Message Send Successfully");
+            }
+        }
+    </script>
+<nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand h1" href="index.html">
+            <span class="text-dark h4">A Better</span> <span class="text-primary h4">Life</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+            <div class="flex-fill mx-xl-5 mb-2">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" id="Home" href="file:///C:/Users/Dell/Desktop/Payment_Gateway_Integration-main/index.html"> <strong>Home</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="https://rzp.io/l/22TJN6aI"> <strong>Donate Now</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="file:///C:/Users/Dell/Desktop/Payment_Gateway_Integration-main/index.html#YourContribution"><strong>Your Contribution</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="contacthere.html"><strong>Contact</strong></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+</nav>
+    <section class="contact_area section_gap" style="padding:100px 90px 30px 70px;">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="contact_info">
+                    <div class="info_item">
+                        <i class="fa fa-home"></i>
+                        <h6 style="color:blue;"><strong>A Better Life <br> DARBHANGA,BIHAR-847103</strong></h6>
+
+             </div><br>
+                    <div class="info_item">
+                        <i class="fa fa-phone"></i>
+                        <h6><a href="#" style="color:blue;"><Strong>9638527419</Strong></a></h6>
+
+                    </div><br>
+                    <div class="info_item">
+                        <i class="fa fa-envelope"></i>
+                        <h6><a href="#" style="color:blue;"><strong>nagendrajha112@gmail.com</strong></a></h6>
+
+                    </div>
+                </div>
+            </div><br>
+            <div class="col-lg-9">
+                <form class="row contact_form" id="contactForm" novalidate="novalidate">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter email address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject"
+                                placeholder="Enter Subject">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" id="message" rows="1"
+                                placeholder="Enter Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-right" >
+                        <button type="submit" value="submit" class="btn primary_btn" onclick="validation()"> <strong>Send Message</strong></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
